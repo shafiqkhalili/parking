@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    font-family: Verdana, Tahoma, sans-serif;
+    padding: 0;
+}
+
+.main_header{
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: beige;
+    color: black;
+    margin: 0 auto;
+    font-family: 'Manjari', sans-serif;
+}
+
+.main_header li{
+    list-style-type: none;
+    margin-right: 10px;
+    padding-right: 10px;
+    display: inline;
+}
+.main_header li a{
+    display: inline-block;
+    text-decoration: none;
+    padding-right: 10px;
+    margin-right: 10px;
+    color: black;
+    font-size: 0.9em;
+}
+.main_genre{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.genre_title{
+    color: white;
+}
+.genre_title h1{
+    font-size: 3em;
+}
+.genre_title p{
+    font-size: 2em;
+}
+.main_info{
+    background-color: white;
+    
+}
+.main_info p{
+    font-family: 'Noto', sans-serif;
+}
+/*Form css*/
+form{
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+form label{
+    font-size: 2em;
+    color: white;
+}
+form select{
+    padding-left: 30px;
+    font-size: 1em;
+}
+form fieldset{
+    border-style: none;
+}
+form input{
+    padding-left: 30px;
+    font-size: 1em;
+}
+form button{
+    background-color: darkblue;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+/*Genre images*/
+.start_genre{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../assets/start-img.jpg);
+}
+.contact_genre{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../assets/contact-img.jpg);
+}
+.booking_genre{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../assets/booking-img.jpg);
+}

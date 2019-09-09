@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eng">
   <head>
     <title>
       Delux Parking
@@ -21,7 +21,8 @@
         <ul class="main_header">
           <li><a href="index.html">Start</a></li>
           <li>
-            <a href="booking.html" target="" rel="">Boka Parkering</a
+            <a href="booking.html" target="" rel="noopener"
+              >Boka Parkering</a
             >
           </li>
           <li><a href="services.html" target="">Våra övriga tjänster</a></li>
@@ -32,11 +33,29 @@
       </nav>
     </header>
     <main>
-      <section class="main_genre start_genre">
-        <article class="genre_title">
-          <h1>Welcome to Delux Parking</h1>
-          <p>Comfort & safety</p>
-        </article>
+      <section class="main_genre booking_genre">
+        <form action="">
+            <fieldset>
+            <label for="booking_type">
+                Boka tjänst:
+            <select name="booking_type" id="booking_type">
+                <option value="">Välj en tjänst</option>
+                <option value="parking">Boka parking</option>
+                <option value="car_wash">Biltvätt</option>
+                <option value="service">Övriga tjänster</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label for="booking_date"> Välj tid:
+                <input type="datetime-local" name="booking_date">
+            </label>
+        </fieldset>
+        <fieldset>
+                <button id="booking_sumbit" type="button">Submit</button>
+        </fieldset>
+            
+        </label>
+        </form>
       </section>
       <section class="main_info">
         <article class="">
