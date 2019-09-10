@@ -3,32 +3,66 @@ body{
     font-family: Verdana, Tahoma, sans-serif;
     padding: 0;
 }
-
 .main_header{
-    width: 100vw;
-    height: 50px;
+    /* width: 100vw; */
+    /* height: 20vh; */
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    /* align-items: center; */
     background-color: beige;
     color: black;
-    margin: 0 auto;
+    margin: 0;
     font-family: 'Manjari', sans-serif;
 }
-
+@media all and(max-width:500px){
+    .main_header{
+        justify-content: space-around !important;
+    }
+}
+@media all and(max-width:400px){
+    .main_header{
+        flex-wrap: column wrap !important;
+    }
+}
+.main_header ul{
+    padding-inline-start: 0;
+    padding:0;
+}
 .main_header li{
     list-style-type: none;
-    margin-right: 10px;
-    padding-right: 10px;
-    display: inline;
+    /* padding: 20px 10px; */
+    display: list-item;
 }
-.main_header li a{
-    display: inline-block;
+.main_header li.active{
+    background-color: #800000;
+    
+}
+.main_header li.active a{
+    color: white;
+}
+/* .main_header li:last-child{
+    margin-right: 30px;
+}
+.main_header li:first-child img{
+    height: 75px;
+} */
+.main_header a{
+    display: block;
     text-decoration: none;
-    padding-right: 10px;
-    margin-right: 10px;
+    /* padding-right: 10px; */
+    padding: 1em;
     color: black;
-    font-size: 0.9em;
+    font-size: 1.5em;
+    font-variant: all-petite-caps;
+    font-weight: bolder;
+}
+.main_header li a:active{
+    color: #800000;
+}
+.main_header li a:hover{
+    /* font-size: 1.7em; */
+    background:bisque;
+    color: black;
 }
 .main_genre{
     background-size: cover;
@@ -55,8 +89,13 @@ body{
     font-size: 2em;
 }
 .main_info{
-    background-color: white;
-    
+    background-color: #800000;
+    color: white;
+    padding: 10px 20px;
+    border-style: solid;
+    margin: 50px;
+    border-radius: 10px;
+    border-width: thin;
 }
 .main_info p{
     font-family: 'Noto', sans-serif;
