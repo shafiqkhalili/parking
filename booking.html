@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
   <head>
     <title>
       Delux Parking
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Manjari|Lato|Noto+Serif"
+      href="https://fonts.googleapis.com/css?family=Manjari%7CLato%7CNoto+Serif"
     />
     <style></style>
   </head>
@@ -21,20 +21,18 @@
         <ul class="main_header">
           <li><a href="index.html">Start</a></li>
           <li class="active">
-            <a href="booking.html" target="" rel="noopener"
-              >Boka Parkering</a
-            >
+            <a href="booking.html" target="_self" rel="">Boka Parkering</a>
           </li>
-          <li><a href="services.html" target="">Våra övriga tjänster</a></li>
-          <li><a href="adress.html" target="">Hitta till oss</a></li>
-          <li><a href="contact.html" target="">Kontakt</a></li>
-          <li><a href="about.html" target="">Varför Delux Parkering</a></li>
+          <li><a href="services.html" target="_self">Våra övriga tjänster</a></li>
+          <li><a href="adress.html" target="_self">Hitta till oss</a></li>
+          <li><a href="contact.html" target="_self">Kontakt</a></li>
+          <li><a href="about.html" target="_self">Varför Delux Parkering</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="main_genre booking_genre">
-        <form action="">
+      <div class="main_genre booking_genre">
+        <form action="POST">
             <fieldset>
             <label for="booking_type">
                 Boka tjänst:
@@ -44,19 +42,21 @@
                 <option value="car_wash">Biltvätt</option>
                 <option value="service">Övriga tjänster</option>
             </select>
+          </label>
         </fieldset>
+         
         <fieldset>
             <label for="booking_date"> Välj tid:
-                <input type="datetime-local" name="booking_date">
+                <input type="datetime-local" name="booking_date" id="booking_date">
             </label>
         </fieldset>
         <fieldset>
                 <button id="booking_sumbit" type="button">Submit</button>
         </fieldset>
             
-        </label>
+       
         </form>
-      </section>
+      </div>
     </main>
   </body>
 </html>
