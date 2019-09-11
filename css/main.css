@@ -14,16 +14,7 @@ body{
     margin: 0;
     font-family: 'Manjari', sans-serif;
 }
-@media all and(max-width:500px){
-    .main_header{
-        justify-content: space-around !important;
-    }
-}
-@media all and(max-width:400px){
-    .main_header{
-        flex-wrap: column wrap !important;
-    }
-}
+
 .main_header ul{
     padding-inline-start: 0;
     padding:0;
@@ -140,3 +131,4 @@ form button{
 .booking_genre{
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../assets/booking-img.jpg);
 }
+@import url("responsive.css");
