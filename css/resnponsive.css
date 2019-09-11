@@ -1,0 +1,10 @@
+@media screen and(max-width:800px){
+    .main_header{
+        justify-content: space-around !important;
+    }
+}
+@media screen and(max-width:400px){
+    .main_header{
+        flex-wrap: column wrap !important;
+    }
+}
