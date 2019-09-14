@@ -1,14 +1,13 @@
+/* Navigation bar */
 body{
     margin: 0;
     font-family: Verdana, Tahoma, sans-serif;
     padding: 0;
+    background: rgb(129, 129, 119);
 }
 .main_header{
-    /* width: 100vw; */
-    /* height: 20vh; */
     display: flex;
     justify-content: flex-end;
-    /* align-items: center; */
     background-color: beige;
     color: black;
     margin: 0;
@@ -21,7 +20,6 @@ body{
 }
 .main_header li{
     list-style-type: none;
-    /* padding: 20px 10px; */
     display: list-item;
 }
 .main_header li.active{
@@ -37,98 +35,122 @@ body{
 .main_header li:first-child img{
     height: 75px;
 } */
-.main_header a{
-    display: block;
-    text-decoration: none;
-    /* padding-right: 10px; */
-    padding: 1em;
-    color: black;
-    font-size: 1.5em;
-    font-variant: all-petite-caps;
-    font-weight: bolder;
+.main_header a {
+  display: block;
+  text-decoration: none;
+  padding: 1em;
+  color: black;
+  font-size: 1.5em;
+  font-variant: all-petite-caps;
+  font-weight: bolder;
 }
-.main_header li a:active{
-    color: #800000;
+.main_header li a:active {
+  color: #800000;
 }
-.main_header li a:hover{
-    /* font-size: 1.7em; */
-    background:bisque;
-    color: black;
+.main_header li a:hover {
+  background: bisque;
+  color: black;
 }
-.main_genre{
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+/* Genre section */
 
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
+.main_genre {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Lato", sans-serif;
 }
 
-.genre_title{
-    color: white;
+.genre_title {
+  color: white;
 }
-.genre_title h1{
-    font-size: 3em;
+.genre_title h1 {
+  font-size: 3em;
 }
-.genre_title p{
-    font-size: 2em;
+.genre_title p {
+  font-size: 2em;
 }
-.main_info{
-    background-color: #800000;
-    color: white;
-    padding: 10px 20px;
-    border-style: solid;
-    margin: 50px;
-    border-radius: 10px;
-    border-width: thin;
+.service_genre .genre_title{
+justify-content: space-between;    
 }
-.main_info p{
-    font-family: 'Noto', sans-serif;
+.main_info {
+  background-color: #800000;
+  color: white;
+  padding: 10px 20px;
+  border-style: solid;
+  margin: 50px;
+  border-radius: 10px;
+  border-width: thin;
 }
+.main_info p {
+  font-family: "Noto", sans-serif;
+}
+
 /*Form css*/
-form{
-    border-style: solid;
-    border-color: white;
-    border-radius: 10px;
-    backdrop-filter: blur(5px);
+
+form {
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
 }
-form label{
-    font-size: 2em;
-    color: white;
+form label {
+  font-size: 2em;
+  color: white;
 }
-form select{
-    padding-left: 30px;
-    font-size: 1em;
+form select {
+  padding-left: 30px;
+  font-size: 1em;
 }
-form fieldset{
-    border-style: none;
+form fieldset {
+  border-style: none;
 }
-form input{
-    padding-left: 30px;
-    font-size: 1em;
+form input {
+  padding-left: 30px;
+  font-size: 1em;
 }
-form button{
-    background-color: darkblue;
-    font-size: 2em;
-    color: white;
-    cursor: pointer;
-    border-radius: 10px;
-    margin-top: 30px;
+form button {
+  background-color: darkblue;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 30px;
 }
+
 /*Genre images*/
-.start_genre{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../assets/start-img.jpg);
+.start_genre {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/start-img.jpg);
 }
-.contact_genre{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../assets/contact-img.jpg);
+.contact_genre {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/contact-img.jpg);
 }
-.booking_genre{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../assets/booking-img.jpg);
+.booking_genre {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/booking-img.jpg);
 }
-@import url("responsive.css");
+/*Footer CSS*/
+
+/* @import url("responsive.css"); */
+
+/* @media all and (max-width: 800px) {
+  .main_header {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .main_header {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  } }*/
