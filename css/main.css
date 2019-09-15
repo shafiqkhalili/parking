@@ -1,134 +1,215 @@
+/* Navigation bar */
 body{
     margin: 0;
     font-family: Verdana, Tahoma, sans-serif;
     padding: 0;
+    background:beige;
 }
-.main_header{
-    /* width: 100vw; */
-    /* height: 20vh; */
+header {
+  background: beige;
+  position: relative;
+  z-index: 999;
+}
+.header_ul{
     display: flex;
-    justify-content: flex-end;
-    /* align-items: center; */
+    flex-flow: row nowrap;
+    justify-content: center;
+    
     background-color: beige;
     color: black;
     margin: 0;
-    font-family: 'Manjari', sans-serif;
-}
+    font-family: 'Roboto Mono', monospace;
 
-.main_header ul{
-    padding-inline-start: 0;
+    padding-inline-start: 0 !important;
     padding:0;
 }
-.main_header li{
+.header_ul li{
     list-style-type: none;
-    /* padding: 20px 10px; */
     display: list-item;
+    padding: 15px 0;
 }
-.main_header li.active{
+.header_ul li.active{
     background-color: #800000;
     
 }
-.main_header li.active a{
+.header_ul li.active a:hover{
+  color:black;
+}
+.header_ul li.active a{
     color: white;
 }
-/* .main_header li:last-child{
-    margin-right: 30px;
+.header_ul a {
+  display: block;
+  text-decoration: none;
+  padding:0.5em 1em;
+  color: black;
+  font-size: 1.2em;
 }
-.main_header li:first-child img{
-    height: 75px;
-} */
-.main_header a{
-    display: block;
-    text-decoration: none;
-    /* padding-right: 10px; */
-    padding: 1em;
-    color: black;
-    font-size: 1.5em;
-    font-variant: all-petite-caps;
-    font-weight: bolder;
+.header_ul li:hover{
+  background: bisque;
+  color: black;
 }
-.main_header li a:active{
-    color: #800000;
-}
-.main_header li a:hover{
-    /* font-size: 1.7em; */
-    background:bisque;
-    color: black;
-}
-.main_genre{
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
+.header h1{
+  display:inline-block;
+  align-content: center;
+  margin:20pxx;
+  color:#000000;
+  font:300 40px 'segoe ui',sans-serif;
+  line-height:35px;
+  position: absolute;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: bolder;
+  position: static;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
-.genre_title{
-    color: white;
+/*Humburger menu*/
+header label{
+  font:300 40px 'fontawesome';
+  color:#800000;
+  line-height:50px;
+  cursor:pointer;
+  padding-right: 10px;
+
+   position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
 }
-.genre_title h1{
-    font-size: 3em;
+nav .navicon,label{
+  display:none;
 }
-.genre_title p{
-    font-size: 2em;
+/* Genre section */
+
+.main_genre {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  width: 100vw;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Lato", sans-serif;
 }
-.main_info{
+
+.genre_title {
+  color: white;
+}
+.genre_title h1 {
+  font-size: 3em;
+}
+.genre_title p {
+  font-size: 2em;
+}
+.service_genre .genre_title{
+justify-content: space-between;    
+}
+.main_info {
+  background-color: #800000;
+  color: white;
+  padding: 10px 20px;
+  border-style: solid;
+  margin: 50px;
+  border-radius: 10px;
+  border-width: thin;
+}
+.main_info p {
+  font-family: "Noto", sans-serif;
+}
+.footer {
     background-color: #800000;
     color: white;
-    padding: 10px 20px;
-    border-style: solid;
-    margin: 50px;
-    border-radius: 10px;
-    border-width: thin;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 2em;
 }
-.main_info p{
-    font-family: 'Noto', sans-serif;
+.footer p {
+  font-family: "Noto", sans-serif;
 }
 /*Form css*/
-form{
-    border-style: solid;
-    border-color: white;
-    border-radius: 10px;
-    backdrop-filter: blur(5px);
+
+form {
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
 }
-form label{
-    font-size: 2em;
-    color: white;
+form label {
+  font-size: 2em;
+  color: white;
 }
-form select{
-    padding-left: 30px;
-    font-size: 1em;
+form select {
+  padding-left: 30px;
+  font-size: 1em;
 }
-form fieldset{
-    border-style: none;
+form fieldset {
+  border-style: none;
 }
-form input{
-    padding-left: 30px;
-    font-size: 1em;
+form input {
+  padding-left: 30px;
+  font-size: 1em;
 }
-form button{
-    background-color: darkblue;
-    font-size: 2em;
-    color: white;
-    cursor: pointer;
-    border-radius: 10px;
-    margin-top: 30px;
+form button {
+  background-color: darkblue;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 30px;
 }
+
 /*Genre images*/
-.start_genre{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../assets/start-img.jpg);
+.start_genre {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/start-img.jpg);
 }
-.contact_genre{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../assets/contact-img.jpg);
+.contact_genre {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/contact-img.jpg);
 }
-.booking_genre{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../assets/booking-img.jpg);
+.booking_genre {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/booking-img.jpg);
 }
-@import url("responsive.css");
+
+/* @import url("responsive.css"); */
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .header_ul {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    opacity:0;
+    visibility:hidden;
+  }
+  input,label{
+    display:block;
+  }
+  .header h1{
+    line-height: 60px;
+    position: relative;   
+    margin: 0;
+  }
+  input.navicon:checked~ul{
+    opacity:1;
+    visibility:visible;
+  }
+  nav ul li{
+    float:none;
+    text-align:center;
+  }
+}
