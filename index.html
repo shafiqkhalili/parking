@@ -5,11 +5,11 @@
       Delux Parking
     </title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Manjari%7CLato%7CNoto+Serif"
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono%7CLato%7CNoto+Serif%7CMontserrat+Alternates&display=swap"
     />
     <link
       rel="stylesheet"
@@ -19,45 +19,35 @@
 
   <body>
     <!-- comment -->
-    <header>
-      
-      <nav>
-        <ul class="main_header">
-          <li class="active"><a href="index.html">Start</a></li>
-          <li><a href="booking.html" target="_self" rel="">Boka Parkering</a></li>
-          <li><a href="services.html" target="_self">Övriga tjänster</a></li>
-          <li><a href="adress.html" target="_self">Hitta till oss</a></li>
-          <li><a href="contact.html" target="_self">Kontakt</a></li>
-          <li><a href="about.html" target="_self">Varför Delux Parkering</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="main_genre start_genre">
-        <div class="genre_title">
-          <h2>Welcome to Delux Parking</h2>
-          <p>Comfort & safety</p>
+    <div class="wrapper">
+      <header class="header">
+        <h1>Delux Parking</h1>
+        <nav class="header_nav">
+          <input class='navicon' id='navicon' type='checkbox'>
+          <label for='navicon'>&#xf0c9;</label>
+          <ul class="header_ul">
+            <li class="active"><a href="index.html">Start</a></li>
+            <li>
+              <a href="booking.html" target="_self" rel="">Boka Parkering</a>
+            </li>
+            <li><a href="services.html" target="_self">Övriga tjänster</a></li>
+            <li><a href="adress.html" target="_self">Hitta till oss</a></li>
+            <li><a href="contact.html" target="_self">Kontakt</a></li>
+            <li>
+              <a href="about.html" target="_self">Varför D/P</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="main_genre start_genre">
+          <div class="genre_title">
+            <h2>Welcome to Delux Parking</h2>
+            <p>Comfort & safety</p>
+          </div>
         </div>
-      </div>
-      <div class="main_info">
-        <div class="">
-          <h2>Header 1</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque arcu ligula, semper id commodo quis, tempus ac velit.
-            Phasellus aliquam massa vel metus volutpat, id placerat eros congue.
-            Sed elit ex, fringilla id ante eget, bibendum euismod nunc. Nam
-            suscipit et lectus ut bibendum. Duis orci nisl, ullamcorper at nunc
-            id, ornare aliquam dui. In id accumsan diam. Sed ac odio vitae lorem
-            condimentum tristique. Nullam cursus nibh vel massa mollis
-            malesuada. Mauris fringilla pulvinar accumsan. Sed id erat a velit
-            congue facilisis ac vitae mauris. Nulla fermentum tempus felis, quis
-            euismod velit facilisis eget. Morbi id commodo leo. Sed finibus
-            vitae arcu vel vehicula.
-          </p>
-        </div>
-      </div>
-    </main>
-    <footer></footer>
+      </main>
+      <footer class="footer">Copy right</footer>
+    </div>
   </body>
 </html>

@@ -3,53 +3,84 @@ body{
     margin: 0;
     font-family: Verdana, Tahoma, sans-serif;
     padding: 0;
-    background: rgb(129, 129, 119);
+    background:beige;
 }
-.main_header{
+header {
+  background: beige;
+  position: relative;
+  z-index: 999;
+}
+.header_ul{
     display: flex;
-    justify-content: flex-end;
+    flex-flow: row nowrap;
+    justify-content: center;
+    
     background-color: beige;
     color: black;
     margin: 0;
-    font-family: 'Manjari', sans-serif;
-}
+    font-family: 'Roboto Mono', monospace;
 
-.main_header ul{
-    padding-inline-start: 0;
+    padding-inline-start: 0 !important;
     padding:0;
 }
-.main_header li{
+.header_ul li{
     list-style-type: none;
     display: list-item;
+    padding: 15px 0;
 }
-.main_header li.active{
+.header_ul li.active{
     background-color: #800000;
     
 }
-.main_header li.active a{
+.header_ul li.active a:hover{
+  color:black;
+}
+.header_ul li.active a{
     color: white;
 }
-/* .main_header li:last-child{
-    margin-right: 30px;
-}
-.main_header li:first-child img{
-    height: 75px;
-} */
-.main_header a {
+.header_ul a {
   display: block;
   text-decoration: none;
-  padding: 1em;
+  padding:0.5em 1em;
   color: black;
-  font-size: 1.5em;
-  font-variant: all-petite-caps;
-  font-weight: bolder;
+  font-size: 1.2em;
 }
-.main_header li a:active {
-  color: #800000;
-}
-.main_header li a:hover {
+.header_ul li:hover{
   background: bisque;
   color: black;
+}
+.header h1{
+  display:inline-block;
+  align-content: center;
+  margin:20pxx;
+  color:#000000;
+  font:300 40px 'segoe ui',sans-serif;
+  line-height:35px;
+  position: absolute;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: bolder;
+  position: static;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Humburger menu*/
+header label{
+  font:300 40px 'fontawesome';
+  color:#800000;
+  line-height:50px;
+  cursor:pointer;
+  padding-right: 10px;
+
+   position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+nav .navicon,label{
+  display:none;
 }
 /* Genre section */
 
@@ -60,7 +91,7 @@ body{
   background-attachment: fixed;
 
   width: 100vw;
-  height: 100vh;
+  height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,7 +123,19 @@ justify-content: space-between;
 .main_info p {
   font-family: "Noto", sans-serif;
 }
-
+.footer {
+    background-color: #800000;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 2em;
+}
+.footer p {
+  font-family: "Noto", sans-serif;
+}
 /*Form css*/
 
 form {
@@ -138,19 +181,35 @@ form button {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../assets/booking-img.jpg);
 }
-/*Footer CSS*/
 
 /* @import url("responsive.css"); */
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .header_ul {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
 
-/* @media all and (max-width: 800px) {
-  .main_header {
-    justify-content: space-around;
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    opacity:0;
+    visibility:hidden;
+  }
+  input,label{
+    display:block;
+  }
+  .header h1{
+    line-height: 60px;
+    position: relative;   
+    margin: 0;
+  }
+  input.navicon:checked~ul{
+    opacity:1;
+    visibility:visible;
+  }
+  nav ul li{
+    float:none;
+    text-align:center;
   }
 }
-
-@media all and (max-width: 600px) {
-  .main_header {
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-    padding: 0;
-  } }*/

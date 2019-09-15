@@ -5,31 +5,35 @@
       Delux Parking
     </title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    <meta name="viewport" content="width:device-widht, initial-scale=1.0" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
+   <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono%7CLato%7CNoto+Serif%7CMontserrat+Alternates&display=swap"
+    />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Manjari%7CLato%7CNoto+Serif"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
-    <style></style>
   </head>
 
   <body>
     <!-- comment -->
-    <header>
-      <nav>
-        <ul class="main_header">
-          <li class=""><a href="index.html">Start</a></li>
-          <li>
-            <a href="booking.html" target="_self" rel="">Boka Parkering</a>
-          </li>
-          <li><a href="services.html" target="_self">Övriga tjänster</a></li>
-          <li class="active"><a href="adress.html" target="_self">Hitta till oss</a></li>
-          <li><a href="contact.html" target="_self">Kontakt</a></li>
-          <li><a href="about.html" target="_self">Varför Delux Parkering</a></li>
-        </ul>
-      </nav>
-    </header>
+    <header class="header">
+        <h1>Delux Parking</h1>
+        <nav class="header_nav">
+          <input class='navicon' id='navicon' type='checkbox'>
+          <label for='navicon'>&#xf0c9;</label>
+          <ul class="header_ul">
+            <li><a href="index.html">Start</a></li>
+            <li><a href="booking.html" target="_self" rel="">Boka Parkering</a></li>
+            <li><a href="services.html" target="_self">Övriga tjänster</a></li>
+            <li class="active"><a href="adress.html" target="_self">Hitta till oss</a></li>
+            <li><a href="contact.html" target="_self">Kontakt</a></li>
+            <li><a href="about.html" target="_self">Varför D/P</a></li>
+          </ul>
+        </nav>
+      </header>
     <main>
       <div class="main_genre start_genre">
         <div class="genre_title">
@@ -56,5 +60,6 @@
         </div>
       </div>
     </main>
+    <footer class="footer">Copy right</footer>
   </body>
 </html>
