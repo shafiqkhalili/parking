@@ -4,6 +4,7 @@ body{
     font-family: Verdana, Tahoma, sans-serif;
     padding: 0;
     background:beige;
+    overflow: hidden;
 }
 header {
   background: beige;
