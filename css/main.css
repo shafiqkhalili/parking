@@ -79,7 +79,7 @@ header label{
     right: 20px;
     cursor: pointer;
 }
-nav .navicon,label{
+.header_nav .navicon, .header_nav label{
   display:none;
 }
 /* Genre section */
@@ -196,7 +196,7 @@ form button {
     opacity:0;
     visibility:hidden;
   }
-  input,label{
+  .header_nav label{
     display:block;
   }
   .header h1{
