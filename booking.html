@@ -7,7 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
-     <link
+    <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto+Mono%7CLato%7CNoto+Serif%7CMontserrat+Alternates&display=swap"
     />
@@ -20,45 +20,35 @@
   <body>
     <!-- comment -->
     <header class="header">
-        <h1>Delux Parking</h1>
-        <nav class="header_nav">
-          <input class='navicon' id='navicon' type='checkbox'>
-          <label for='navicon'>&#xf0c9;</label>
-          <ul class="header_ul">
-            <li><a href="index.html">Start</a></li>
-            <li class="active"><a href="booking.html" target="_self" rel="">Boka Parkering</a></li>
-            <li><a href="services.html" target="_self">Övriga tjänster</a></li>
-            <li><a href="adress.html" target="_self">Hitta till oss</a></li>
-            <li><a href="contact.html" target="_self">Kontakt</a></li>
-            <li><a href="about.html" target="_self">Varför D/P</a></li>
-          </ul>
-        </nav>
-      </header>
+      <h1>Delux Parking</h1>
+      <nav class="header_nav">
+        <input class="navicon" id="navicon" type="checkbox" />
+        <label for="navicon">&#xf0c9;</label>
+        <ul class="header_ul">
+          <li><a href="index.html">Start</a></li>
+          <li class="active">
+            <a href="booking.html" target="_self" rel="">Boka Parkering</a>
+          </li>
+          <li><a href="services.html" target="_self">Övriga tjänster</a></li>
+          <li><a href="adress.html" target="_self">Hitta till oss</a></li>
+          <li><a href="contact.html" target="_self">Kontakt</a></li>
+          <li><a href="about.html" target="_self">Varför D/P</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <div class="main_genre booking_genre">
         <form action="POST">
-            <fieldset>
-            <label for="booking_type">
-                Boka tjänst:
+          <div class="cf">
             <select name="booking_type" id="booking_type">
-                <option value="">Välj en tjänst</option>
-                <option value="parking">Boka parking</option>
-                <option value="car_wash">Biltvätt</option>
-                <option value="service">Övriga tjänster</option>
+              <option selected value="">Välj en tjänst</option>
+              <option value="parking">Boka parking</option>
+              <option value="car_wash">Biltvätt</option>
+              <option value="service">Övriga tjänster</option>
             </select>
-          </label>
-        </fieldset>
-         
-        <fieldset>
-            <label for="booking_date"> Välj tid:
-                <input type="datetime-local" name="booking_date" id="booking_date">
-            </label>
-        </fieldset>
-        <fieldset>
-                <button id="booking_sumbit" type="button">Submit</button>
-        </fieldset>
-            
-       
+            <input type="datetime-local" name="booking_date" id="booking_date" placeholder="Välj tid"/>
+            <input type="button" id="booking_sumbit" id="input-submit" value="Ansöka"/>
+          </div>
         </form>
       </div>
     </main>

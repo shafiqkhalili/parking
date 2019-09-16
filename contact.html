@@ -20,45 +20,91 @@
   <body>
     <!-- comment -->
     <header class="header">
-        <h1>Delux Parking</h1>
-        <nav class="header_nav">
-          <input class='navicon' id='navicon' type='checkbox'>
-          <label for='navicon'>&#xf0c9;</label>
-          <ul class="header_ul">
-            <li><a href="index.html">Start</a></li>
-            <li><a href="booking.html" target="_self" rel="">Boka Parkering</a></li>
-            <li><a href="services.html" target="_self">Övriga tjänster</a></li>
-            <li><a href="adress.html" target="_self">Hitta till oss</a></li>
-            <li class="active"><a href="contact.html" target="_self">Kontakt</a></li>
-            <li><a href="about.html" target="_self">Varför D/P</a></li>
-          </ul>
-        </nav>
-      </header>
+      <h1>Delux Parking</h1>
+      <nav class="header_nav">
+        <input class="navicon" id="navicon" type="checkbox" />
+        <label for="navicon">&#xf0c9;</label>
+        <ul class="header_ul">
+          <li><a href="index.html">Start</a></li>
+          <li>
+            <a href="booking.html" target="_self" rel="">Boka Parkering</a>
+          </li>
+          <li><a href="services.html" target="_self">Övriga tjänster</a></li>
+          <li><a href="adress.html" target="_self">Hitta till oss</a></li>
+          <li class="active">
+            <a href="contact.html" target="_self">Kontakt</a>
+          </li>
+          <li><a href="about.html" target="_self">Varför D/P</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <div class="main_genre contact_genre">
-        <form action="POST">
-            <fieldset>
-            <label for="contact_name">
-                Ärendetyp:
+        <form id="fs-frm" class="" name="department-contact-form" accept-charset="utf-8"
+          action="https://mailthis.to/shafigh" method="post">
+          <div class="cf">
+            <input type="text" id="input-name" placeholder="Nammn" />
+            <input type="email" id="input-email" placeholder="E-post" />
+            <input type="text" id="input-subject" placeholder="Ämne" />
             <select name="contact_type" id="contact_name">
+                <option value="">Eller välj Ärendetyp</option>
+                <option value="economy">Ekonomi</option>
+                <option value="complain">Klagmål</option>
+                <option value="service">Övriga tjänster</option>
+              </select>
+            <textarea
+              name="message"
+              type="text"
+              id="input-message"
+              placeholder="Meddelande"
+            ></textarea>
+            <input type="Skicka" value="Submit" id="input-submit" />
+            <p> Eller skicka epost till <a href="mailto:shafiqkhalili@gmail.com">Support</a></p>
+          </div>
+          <input type="hidden" name="_subject" value="Contact form submitted" />
+          <input type="hidden" name="_after" value="https://shafiqkhalili.github.io/parking/" />
+          <input type="hidden" name="_honeypot" value="" />
+          <input type="hidden" name="_confirmation" value="" />
+          
+
+          </form>
+          <fieldset>
+            <label for="contact_name">
+              Ärendetyp:
+              <select name="contact_type" id="contact_name">
                 <option value="">Ange Ärendetyp</option>
                 <option value="economy">Ekonomi</option>
                 <option value="complain">Klagmål</option>
                 <option value="service">Övriga tjänster</option>
-            </select></label>
-        </fieldset>
-        <fieldset>
-            <label for="contact_text"> Mer info:
-                <textarea name="contact_text" id="contact_text" cols="30" rows="10"></textarea>
+              </select></label
+            >
+          </fieldset>
+          <fieldset>
+            <label for="contact_text">
+              Mer info:
+              <textarea required
+                name="contact_text"
+                id="contact_text"
+                cols="30"
+                rows="10"
+              ></textarea>
             </label>
-        </fieldset>
-        <fieldset>
-                <button id="booking_sumbit" type="button">Submit</button>
-        </fieldset>
-            
-        </form>
+          </fieldset>
+          <fieldset>
+            <label for="contact_email">
+              e-post:
+              <input required
+                name="contact_email"
+                id="contact_email"
+                type="email"
+              ></input>
+            </label>
+          </fieldset>
+          <fieldset>
+            <button id="booking_sumbit" type="button">Submit</button>
+          </fieldset>
+        </form> -->
       </div>
-      
     </main>
     <footer class="footer">Copy right</footer>
   </body>
