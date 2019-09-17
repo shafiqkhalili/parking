@@ -36,8 +36,8 @@ header {
     background-color: #800000;
     
 }
-.header_ul li.active a:hover{
-  color:black;
+.header_ul li .active a:hover{
+  color:white;
 }
 .header_ul li.active a{
     color: white;
@@ -50,8 +50,11 @@ header {
   font-size: 1.2em;
 }
 .header_ul li:hover{
-  background: bisque;
-  color: black;
+  background: #00008b;
+  color: white;
+}
+.header_ul li:hover a{
+  color: white;
 }
 .header h1{
   display:inline-block;
@@ -102,7 +105,11 @@ header label{
   text-align: center;
   font-family: "Lato", sans-serif;
 }
-
+.main_genre li{
+  text-align: left;
+  line-height: 2em;
+  font-size: 2em;
+}
 .genre_title {
   color: white;
   width: 80%;
@@ -335,11 +342,11 @@ form button {
 }
 
 .popular .pricing-table a {
-  background: #2F333C;
+  background: #00008b;
 }
 
 .pricing-table a:hover {
-  background: #505A6B;
+  background: #00008b;
 }
 
 /*------------------------------------*/
