@@ -170,6 +170,9 @@ form {
      width: 90%;
      margin: 0.5em auto;
  }  
+ form select{
+    height: 40px;
+ }
   #input-submit {
      color: white; 
      background: #800000;
