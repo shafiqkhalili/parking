@@ -1,2 +1,2 @@
 # delux_parking
-Delux parking project
+Deluxe parking project
